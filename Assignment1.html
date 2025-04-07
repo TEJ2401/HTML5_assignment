@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    </script>
+</head>
+<body>
+    <form action="" autocomplete="on">
+        <table>
+            <thead>
+                <th>Input Name</th>
+                <th>Input</th>
+            </thead>
+
+        <tr>
+            <td>FirstName</td>
+            <td><input type="text" name="firstName" required></td>
+        </tr>
+        
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text" name="lastName" required></td>
+        </tr>
+        <tr>
+            <td>Email Id</td>
+            <td><input type="email" name="emailId"></td>
+        </tr>
+        <tr>
+            <td>Select Gender</td>
+            <td><div>
+                <input type="radio" required id="Male" name="GenderChoice">
+                <label for="Male">Male</label>
+                <input type="radio" id="Female" name="GenderChoice">
+                <label for="Female">Female</label>
+            </div></td>
+        </tr>
+        <tr>
+            <td>Select City</td>
+            <td>
+            <input required list="city-names" id="city-choice" name="city-choice" />
+
+            <datalist id="city-names">
+                <option value="Jamnagar"></option>
+                <option value="Rajkot"></option>
+                <option value="Ahmedabad"></option>
+                <option value="Vadodara"></option>
+                <option value="Surat"></option>
+            </datalist>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Upload Resume</td>
+            <td><input type="file" accept=".pdf,.docx,.doc" required></td>
+        </tr>
+        <tr>
+            <td>Select Position Applying For</td>
+            <td>
+                <select name="" id="" required>
+                    <option value="">Select Position</option>
+                    <optgroup label="Buisness">
+                        <option value="Sales Representative">Sales Representative</option>
+                        <option value="Buisness Analyst">Buisness Analyst</option>
+                        <option value="Product Manager">Product Manager</option>
+                    </optgroup>
+                    <optgroup label="IT">
+                        <option value="Java Full Stack Developer">Java Full Stack Engineer</option>
+                        <option value="Mern">MERN Stack Developer</option>
+                        <option value="Data Analyst">Data Analyst</option>
+                    </optgroup>
+                    <optgroup label="">
+
+                    </optgroup>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Tentative Date For Joining</td>
+            <td><input type="date" min="2025-04-14" max="2025-04-21" required></td>
+        </tr>
+        </table>
+        <button type="submit">Apply</button>
+    </form>
+
+</body>
+</html>
